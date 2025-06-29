@@ -1,0 +1,112 @@
+type: collection.insomnia.rest/5.0
+name: usuario_api
+meta:
+  id: wrk_2ad014fa5cec4d5bb1aa9c264c5aa2f4
+  created: 1751227808032
+  modified: 1751227808032
+collection:
+  - url: http://localhost:8080/usuarios
+    name: Cadastro
+    meta:
+      id: req_34e6de41d20047b59dcf584c45759804
+      created: 1751227822560
+      modified: 1751229409254
+      isPrivate: false
+      sortKey: -1751227822560
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "nome": "Kelwin Teste 2",
+            "email": "kelwin.afasf@",
+            "senha": "senhaSegura123"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/usuarios
+    name: Consulta
+    meta:
+      id: req_c1e4eece30d249cfae2efef473575a28
+      created: 1751227871686
+      modified: 1751229430657
+      isPrivate: false
+      sortKey: -1751227871686
+    method: GET
+    parameters:
+      - id: pair_c1d9bf453ee0493d9dfe6c27080e98a4
+        name: page
+        value: "0"
+        disabled: true
+      - id: pair_7677dc65e994444ab5a4e42cc75c2c6c
+        name: size
+        disabled: false
+      - id: pair_95b5dc2010644326bd6c25c14c781430
+        name: nome
+        value: "10"
+        disabled: true
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/usuarios/2
+    name: Consulta por ID
+    meta:
+      id: req_f6b24c158fc54830a50dc37248e20003
+      created: 1751227963250
+      modified: 1751229170561
+      isPrivate: false
+      sortKey: -1751227963250
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_391bdfbc9a532c9866f393a5523f32e806878e01
+    created: 1751227808041
+    modified: 1751229142201
+  cookies:
+    - key: JSESSIONID
+      value: 0A146F0DA2F2C05040AD6CA37DA55425
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-06-29T20:13:00.594Z
+      lastAccessed: 2025-06-29T20:32:22.201Z
+      id: efcaac6a-a6cf-4af0-ab0f-b2e7bd9f5df9
+environments:
+  name: Base Environment
+  meta:
+    id: env_391bdfbc9a532c9866f393a5523f32e806878e01
+    created: 1751227808038
+    modified: 1751227808038
+    isPrivate: false
