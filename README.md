@@ -33,7 +33,7 @@ Esta seção descreve os endpoints REST disponíveis na API para gerenciamento d
 
 ### `GET /usuarios`
 
-**Descrição:** Permite o cadastro de um novo usuário no sistema. Após o cadastro bem-sucedido, um e-mail de confirmação é simulado para o endereço fornecido.
+**Descrição:** Permite consultar a lista de usuários cadastrados, com suporte a paginação e filtro por nome.
 
 **Parametros de consulta:**
 - page: (int, default: 0): Número da página a ser retornada (base 0).
@@ -42,7 +42,7 @@ Esta seção descreve os endpoints REST disponíveis na API para gerenciamento d
 
 ### `GET /usuarios/{id}`
 
-**Descrição:** Permite o cadastro de um novo usuário no sistema. Após o cadastro bem-sucedido, um e-mail de confirmação é simulado para o endereço fornecido.
+**Descrição:** Permite consultar os detalhes de um usuário específico utilizando seu ID.
 
 **Parametros de caminho:**
 - {id} (long): ID único do usuário a ser consultado.
